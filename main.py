@@ -18,7 +18,7 @@
 def main():
     aggregate = []
     while True:
-        score = input("What is your aggregate[+]")
+        score = input("What is your aggregate[+] (Press q to quit) ")
         if score == "q": 
             break
         aggregate.append(int(score))
@@ -46,4 +46,7 @@ def tell_student_faculty_dept(aggre_list: list):
         return "Medicine and Law"
     else:
         None
+
+if __name__ == "__main__":
+    main()
 
